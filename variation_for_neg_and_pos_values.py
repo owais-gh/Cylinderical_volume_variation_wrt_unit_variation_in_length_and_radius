@@ -57,8 +57,8 @@ print("r>2    : x values: "+str(len(rot))+"; y values: "+str(len(vot)))
 
 print("\nTotal values: "+str(len(ro)+len(ra)+len(roe)+len(rot)))
 
-print("\nFor maximum volume increase for V(c+1)>V(h+1): \nRatio: "+str(ra[va.index(max(va))])+";\nLength: "+str(hmax)+";\nCircumference: "+str(cmax)+";\nVolume increase: "+str(max(va)))
-print("\nFor maximum volume increase for V(c+1)<V(h+1): \nRatio: "+str((ro[vd.index(min(vd))]))+";\nLength: "+str(abs(hmin))+";\nCircumference: "+str(abs(cmin))+";\nVolume increase: "+str(abs(min(vd))))
+print("\nFor maximum volume increase for V(c+1)>V(h+1)[i.e., where increasing the circumference is better]: \nRatio: "+str(ra[va.index(max(va))])+";\nLength: "+str(hmax)+";\nCircumference: "+str(cmax)+";\nVolume increase: "+str(max(va)))
+print("\nFor maximum volume increase for V(c+1)<V(h+1)[i.e., where increasing the length is better]: \nRatio: "+str((ro[vd.index(min(vd))]))+";\nLength: "+str(abs(hmin))+";\nCircumference: "+str(abs(cmin))+";\nVolume increase: "+str(abs(min(vd))))
 
 fig, ax = plt.subplots(figsize=(8,6))
 ax.scatter(ro, vd, color='red', marker='x', s=0.1, label='Vd<0')
