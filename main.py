@@ -38,7 +38,7 @@ print("\nFor the ratio where V(c+1)<V(h+1)")
 print("x values:",len(ro))
 print("y values:",len(vd))
 
-print("\nFor the ratio where V(h+1)>V(c+1)")
+print("\nFor the ratio where V(c+1)>V(h+1)")
 print("0<r<0.8: x values: "+str(len(roe))+"; y values: "+str(len(voe)))
 print("0.8<r<2: x values: "+str(len(ra))+"; y values: "+str(len(va)))
 print("r>2    : x values: "+str(len(rot))+"; y values: "+str(len(vot)))
